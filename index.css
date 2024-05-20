@@ -57,77 +57,81 @@ body {
 
 .slides {
     display: flex;
-    transition: transform 1000ms ease; /* Thời gian chuyển đổi slide và hiệu ứng */
+    transition: transform 1000ms ease;
 }
 
 .slide {
     flex: 0 0 100%;
-    height: 300px; /* Chiều cao của slider */
+    height: 300px;
     background-size: cover;
     background-position: center;
+    transition: opacity 0.5s ease; /* Thêm hiệu ứng chuyển đổi cho slide */
+    opacity: 0; /* Slide ẩn ban đầu */
+}
+
+.slide.active {
+    opacity: 1; /* Hiển thị slide được chọn */
+}
+
+.navigation {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .manual-btn {
-    width: 12px; /* Kích thước của nút điều khiển */
-    height: 12px; /* Kích thước của nút điều khiển */
+    width: 12px;
+    height: 12px;
     border-radius: 50%;
-    background-color: rgba(255, 255, 255, 0.5); /* Màu nền của nút điều khiển */
+    background-color: rgba(255, 255, 255, 0.5);
     cursor: pointer;
     margin: 0 5px;
 }
 
 .manual-btn.active {
-    background-color: rgba(255, 255, 255, 0.9); /* Màu nền của nút điều khiển được chọn */
+    background-color: rgba(255, 255, 255, 0.9);
 }
 
 .manual-btn:hover {
-    background-color: rgba(255, 255, 255, 0.7); /* Hiệu ứng khi rê chuột vào nút điều khiển */
+    background-color: rgba(255, 255, 255, 0.7);
 }
 
-
-
-.sale-products {
-    border: 1px solid #be1e1e; /* Định dạng viền */
-    padding: 15px; /* Khoảng cách nội dung với viền */
-    margin-bottom: 20px; /* Khoảng cách giữa các cột */
+/* Product Category Styles */
+.product-category {
+    /* Thêm kiểu dáng cho phần danh mục sản phẩm */
 }
+
+.category-list {
+    /* Thêm kiểu dáng cho danh sách danh mục sản phẩm */
+}
+
 .product {
-    border: 1px solid red;
-    padding: 10px; /* Khoảng cách nội dung với viền */
-    margin-bottom: 15px; /* Khoảng cách giữa các sản phẩm */
+    /* Thêm kiểu dáng cho mỗi sản phẩm */
 }
 
 .product img {
-    max-width: 100%; /* Đảm bảo ảnh không bị tràn ra khỏi phần nội dung */
-    height: auto; /* Tự động điều chỉnh chiều cao để không bị méo */
+    /* Thêm kiểu dáng cho ảnh sản phẩm */
 }
 
 .product h3 {
-    margin-top: 10px; /* Khoảng cách giữa ảnh và tiêu đề */
+    /* Thêm kiểu dáng cho tiêu đề sản phẩm */
 }
 
 .product p {
-    margin-bottom: 10px; /* Khoảng cách giữa nội dung và giá */
-
+    /* Thêm kiểu dáng cho mô tả sản phẩm */
 }
 
 .product .price {
-    display: block;
-    font-weight: bold;
-    margin-top: 10px; /* Khoảng cách giữa mô tả và giá */
+    /* Thêm kiểu dáng cho giá sản phẩm */
 }
 
 .product a {
-    display: inline-block; /* Hiển thị nút thêm vào giỏ hàng trên cùng một dòng */
-    background-color: #007bff; /* Màu nền của nút */
-    color: #fff; /* Màu chữ của nút */
-    padding: 8px 15px; /* Kích thước nút */
-    border-radius: 5px; /* Bo tròn viền nút */
-    text-decoration: none; /* Loại bỏ gạch chân */
+    /* Thêm kiểu dáng cho nút xem sản phẩm */
 }
 
 .product a:hover {
-    background-color: #e00b0b; /* Đổi màu khi di chuột vào */
+    /* Thêm kiểu dáng cho nút xem sản phẩm khi di chuột qua */
 }
 
 /* Footer Styles */

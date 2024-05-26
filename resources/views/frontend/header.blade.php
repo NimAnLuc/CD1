@@ -6,6 +6,14 @@
         <ul>
             <li><a href="#">Home</a></li>
             <li><a href="#">Products</a></li>
+            <li>
+                <a href="#">Category</a>
+                    <ul class="sub-menu">
+                        <li><a href="#">Subcategory</a></li>
+                        <li><a href="#">Subcategory</a></li>
+
+                    </ul>
+            </li>
             <li><a href="#">About Us</a></li>
             <li><a href="#">Contact</a></li>
         </ul>

@@ -11,7 +11,7 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('NimAnLuc_product', function (Blueprint $table) {
+        Schema::create('2122170696_product', function (Blueprint $table) {
             $table->id();
             $table->unsignedInteger('category_id')->nullable();
             $table->unsignedInteger('brand_id')->nullable();
@@ -35,6 +35,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('NimAnLuc_product');
+        Schema::dropIfExists('2122170696_product');
     }
 };

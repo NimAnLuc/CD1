@@ -11,7 +11,7 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('NimAnLuc_order', function (Blueprint $table) {
+        Schema::create('2122170696_order', function (Blueprint $table) {
             $table->id(); //id
             $table->unsignedInteger('user_id');
             $table->string('name', 255);
@@ -31,6 +31,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('NimAnLuc_order');
+        Schema::dropIfExists('2122170696_order');
     }
 };

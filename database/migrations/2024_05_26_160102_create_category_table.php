@@ -11,7 +11,7 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('NimAnLuc_category', function (Blueprint $table) {
+        Schema::create('2122170696_category', function (Blueprint $table) {
             $table->id(); //id
             $table->string('name', 1000);
             $table->string('slug', 1000)->nullable();
@@ -32,6 +32,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('NimAnLuc_category');
+        Schema::dropIfExists('2122170696_category');
     }
 };

@@ -11,7 +11,7 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('NimAnLuc_contact', function (Blueprint $table) {
+        Schema::create('2122170696_contact', function (Blueprint $table) {
             $table->id();
             $table->unsignedInteger('user_id')->nullable();
             $table->string('name');
@@ -31,6 +31,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('NimAnLuc_contact');
+        Schema::dropIfExists('2122170696_contact');
     }
 };

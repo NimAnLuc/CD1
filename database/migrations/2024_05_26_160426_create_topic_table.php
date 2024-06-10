@@ -11,7 +11,7 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('NimAnLuc_topic', function (Blueprint $table) {
+        Schema::create('2122170696_topic', function (Blueprint $table) {
             $table->id();
             $table->string('name', 1000)->nullable();
             $table->string('slug', 1000)->nullable();
@@ -28,6 +28,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('NimAnLuc_topic');
+        Schema::dropIfExists('2122170696_topic');
     }
 };

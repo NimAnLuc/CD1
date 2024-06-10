@@ -8,7 +8,7 @@ use App\Models\Menu;
 class HomeController extends Controller{
     public function index()
     {
-        $list=Menu::get();
+
         return view('frontend.home');
     }
 }
